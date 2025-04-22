@@ -1,9 +1,9 @@
 <?php
 // Configurações do banco de dados
 $host = "localhost";
-$dbname = "portfolio";
-$user = "root";
-$pass = ""; // Altere para a senha do seu MySQL, se houver
+$dbname = "contatos";
+$user = "u783757499_htwebsites";
+$pass = "TF+ak:4]o"; // Altere para a senha do seu MySQL, se houver
 
 // Conectar ao banco
 try {

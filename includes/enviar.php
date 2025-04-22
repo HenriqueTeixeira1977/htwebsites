@@ -1,6 +1,6 @@
 <?php
 // Configurações
-$destino = "seu-email@exemplo.com"; // Substitua pelo seu e-mail
+$destino = "henriqueteixeira.wd@gmail.com"; // Substitua pelo seu e-mail
 $assunto = "Novo contato do site Henrique Teixeira";
 
 // Coletar os dados do formulário

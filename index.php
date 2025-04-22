@@ -252,7 +252,6 @@
         </div>
     </section>
 
-
     <!-- SOBRE SECTION -->
     <section class="py-5" id="sobre">
         <div class="container">

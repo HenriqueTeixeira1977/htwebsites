@@ -1,8 +1,8 @@
 <?php
     $servidor = "localhost";
-    $usuario = "root";
-    $senha = "";
-    $dbname = "portfolio";
+    $usuario = "u783757499_htwebsites";
+    $senha = "TF+ak:4]o";
+    $dbname = "htwebsites";
     $conexao = mysqli_connect($servidor, $usuario, $senha, $dbname);
     
     if(!$conexao) {
