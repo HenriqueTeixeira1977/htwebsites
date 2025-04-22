@@ -1,5 +1,5 @@
 <?php
-    $servidor = "localhost";
+    $servidor = "u783757499_htwebsites";
     $usuario = "u783757499_htwebsites";
     $senha = "TF+ak:4]o";
     $dbname = "htwebsites";
