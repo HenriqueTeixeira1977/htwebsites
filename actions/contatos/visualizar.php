@@ -1,5 +1,7 @@
 <?php
-include('../../includes/conexao.php');
+include('../includes/conexao.php');
+
+$conexao->query("SET time_zone = '-03:00'");
 
 if (isset($_GET['id']) && is_numeric($_GET['id'])) {
     $id = intval($_GET['id']);

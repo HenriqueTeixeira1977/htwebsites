@@ -1,6 +1,9 @@
 <?php
 include('../../includes/conexao.php');
 
+$conexao->query("SET time_zone = '-03:00'");
+
+
 // Verifica se o ID foi passado
 if (!isset($_GET['id']) || empty($_GET['id'])) {
     die("ID inválido ou não informado.");

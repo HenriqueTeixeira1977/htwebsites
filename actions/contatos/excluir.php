@@ -1,6 +1,9 @@
 <?php
 include('../../includes/conexao.php');
 
+$conexao->query("SET time_zone = '-03:00'");
+
+
 $id = $_GET['id'];
 
 $sql = "DELETE FROM contatos WHERE id = $id";
