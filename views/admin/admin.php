@@ -169,7 +169,8 @@ $totalContatos = array_sum($contagemPorTipo);
               <tbody>
                 <?php
 
-                date_default_timezone_set('America/Sao_Paulo');
+                $conexao->query("SET time_zone = '-03:00'");
+
 
                 $where = [];
                   if ($filtroTipo) $where[] = "tipo_site = '" . $conexao->real_escape_string($filtroTipo) . "'";
