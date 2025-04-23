@@ -1,6 +1,6 @@
 <?php
     $servidor = "localhost";
-    $dbname = "u783757499_contatos";
+    $dbname = "u783757499_htwebsites";
     $usuario = "u783757499_htwebsites";
     $senha = "TF+ak:4]o";
 
