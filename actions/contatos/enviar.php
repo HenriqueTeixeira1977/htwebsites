@@ -1,6 +1,10 @@
 <?php
 // Configurações do banco de dados
-include('../../includes/conexao.php');
+$host = "localhost";
+$dbname = "u783757499_htwebsites";
+$user = "u783757499_htwebsites";
+$pass = "TF+ak:4]o";
+
 
 // Conectar ao banco
 try {
