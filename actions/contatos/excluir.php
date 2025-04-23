@@ -9,7 +9,7 @@ $id = $_GET['id'];
 $sql = "DELETE FROM contatos WHERE id = $id";
 
 if ($conexao->query($sql) === TRUE) {
-    header("Location: ../../views/admin/admin.php");
+    header("Location: ../../views/contatos/contatos.php");
     exit();
 } else {
     echo "Erro ao excluir: " . $conexao->error;
