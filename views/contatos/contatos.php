@@ -45,9 +45,9 @@
                         <td>" . substr($linha['mensagem'], 0, 30) . "...</td>
                         <td>" . date('d/m/Y H:i', strtotime($linha['data_envio'])) . "</td>
                         <td>
-                            <a href='visualizar.php?id={$linha['id']}' class='btn btn-sm btn-info'>Visualizar</a>
-                            <a href='editar.php?id={$linha['id']}' class='btn btn-sm btn-warning'>Editar</a>
-                            <a href='excluir.php?id={$linha['id']}' class='btn btn-sm btn-danger' onclick=\"return confirm('Tem certeza que deseja excluir?')\">Excluir</a>
+                            <a href='../../actions/contatos/visualizar.php?id={$linha['id']}' class='btn btn-sm btn-info'>Visualizar</a>
+                            <a href='../../actions/contatos/editar.php?id={$linha['id']}' class='btn btn-sm btn-warning'>Editar</a>
+                            <a href='../../actions/contatos/excluir.php?id={$linha['id']}' class='btn btn-sm btn-danger' onclick=\"return confirm('Tem certeza que deseja excluir?')\">Excluir</a>
                         </td>
                     </tr>";
             }

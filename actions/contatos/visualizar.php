@@ -1,5 +1,5 @@
 <?php
-include('../includes/conexao.php');
+include('../../includes/conexao.php');
 
 $conexao->query("SET time_zone = '-03:00'");
 
