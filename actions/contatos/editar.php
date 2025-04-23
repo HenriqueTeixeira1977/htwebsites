@@ -69,7 +69,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <div class="container mt-5 d-flex justify-content-center">
     <div class="col-md-8 zoom-in">
         <h2 class="text-center mb-4">Editar Contato</h2>
-        <form method="POST">
+        <form action="../../views/admin/admin.php" method="POST">
             <div class="mb-3">
                 <label class="form-label">Nome</label>
                 <input type="text" name="nome" class="form-control" value="<?= htmlspecialchars($contato['nome']) ?>" required>
