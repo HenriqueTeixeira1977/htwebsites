@@ -19,7 +19,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $stmt->bind_param("sssssi", $nome, $email, $whatsapp, $tipo, $mensagem, $id);
 
     if ($stmt->execute()) {
-        header("Location: dashboard.php");
+        header("Location: admin.php");
         exit();
     } else {
         echo "Erro ao atualizar: " . $conexao->error;

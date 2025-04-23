@@ -168,6 +168,7 @@ $totalContatos = array_sum($contagemPorTipo);
               </thead>
               <tbody>
                 <?php
+                date_default_timezone_set('America/Sao_Paulo');
                 $where = [];
                 if ($filtroTipo) $where[] = "tipo_site = '" . $conexao->real_escape_string($filtroTipo) . "'";
                 if ($dataInicio) $where[] = "DATE(data_envio) >= '" . $conexao->real_escape_string($dataInicio) . "'";
