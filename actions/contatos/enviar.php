@@ -40,9 +40,7 @@ if ($nome && $email && $mensagem) {
     echo "<script>alert('Por favor, preencha todos os campos obrigatórios.'); history.back();</script>";
     exit;
 }
-
     date_default_timezone_set('America/Sao_Paulo');
-
 ?>
 
 <!DOCTYPE html>
@@ -195,11 +193,7 @@ if ($nome && $email && $mensagem) {
             <a href="../../index.php" class="btn btn-primary">Voltar à Página Inicial</a>
         </div>
         <div class="card-footer">
-            Enviado em: 
-            <?= 
-                date_default_timezone_set('America/Sao_Paulo');
-                date("d/m/Y H:i") 
-            ?>
+            Enviado em: <?= date("d/m/Y H:i") ?>
         </div>
     </div>
 
