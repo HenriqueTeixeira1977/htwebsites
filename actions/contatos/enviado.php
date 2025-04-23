@@ -31,7 +31,6 @@
             <a href="index.php" class="btn btn-primary mt-3">Voltar à Página Inicial</a>
         </div>
         <div class="card-footer text-muted">
-            <?php date_default_timezone_set('America/Sao_Paulo'); ?>
             <?= date("d/m/Y H:i") ?>
         </div>
     </div>
