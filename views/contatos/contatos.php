@@ -29,7 +29,7 @@
 
         <?php
 
-        date_default_timezone_set('America/Sao_Paulo');
+        $conexao->query("SET time_zone = '-03:00'");
 
         $sql = "SELECT * FROM contatos ORDER BY data_envio DESC";
         $resultado = $conexao->query($sql);
