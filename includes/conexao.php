@@ -1,6 +1,5 @@
 <?php
 
-
     $servidor = "localhost";
     $dbname = "u783757499_contatos";
     $usuario = "u783757499_htwebsites";
