@@ -168,29 +168,32 @@ $totalContatos = array_sum($contagemPorTipo);
               </thead>
               <tbody>
                 <?php
+
+                date_default_timezone_set('America/Sao_Paulo');
+
                 $where = [];
-                if ($filtroTipo) $where[] = "tipo_site = '" . $conexao->real_escape_string($filtroTipo) . "'";
-                if ($dataInicio) $where[] = "DATE(data_envio) >= '" . $conexao->real_escape_string($dataInicio) . "'";
-                if ($dataFim) $where[] = "DATE(data_envio) <= '" . $conexao->real_escape_string($dataFim) . "'";
+                  if ($filtroTipo) $where[] = "tipo_site = '" . $conexao->real_escape_string($filtroTipo) . "'";
+                  if ($dataInicio) $where[] = "DATE(data_envio) >= '" . $conexao->real_escape_string($dataInicio) . "'";
+                  if ($dataFim) $where[] = "DATE(data_envio) <= '" . $conexao->real_escape_string($dataFim) . "'";
 
                 $sql = "SELECT * FROM contatos";
-                if (!empty($where)) $sql .= " WHERE " . implode(" AND ", $where);
+                  if (!empty($where)) $sql .= " WHERE " . implode(" AND ", $where);
                 $sql .= " ORDER BY data_envio DESC LIMIT 50";
 
                 $resultado = $conexao->query($sql);
-                if ($resultado->num_rows > 0) {
-                  while ($linha = $resultado->fetch_assoc()) {
-                    echo "<tr>
-                            <td>" . htmlspecialchars($linha['nome']) . "</td>
-                            <td>" . htmlspecialchars($linha['email']) . "</td>
-                            <td>" . htmlspecialchars($linha['whatsapp']) . "</td>
-                            <td>" . htmlspecialchars($linha['tipo_site']) . "</td>
-                            <td>" . date('d/m/Y H:i', strtotime($linha['data_envio'])) . "</td>
-                          </tr>";
+                  if ($resultado->num_rows > 0) {
+                    while ($linha = $resultado->fetch_assoc()) {
+                      echo "<tr>
+                              <td>" . htmlspecialchars($linha['nome']) . "</td>
+                              <td>" . htmlspecialchars($linha['email']) . "</td>
+                              <td>" . htmlspecialchars($linha['whatsapp']) . "</td>
+                              <td>" . htmlspecialchars($linha['tipo_site']) . "</td>
+                              <td>" . date('d/m/Y H:i', strtotime($linha['data_envio'])) . "</td>
+                            </tr>";
+                    }
+                  } else {
+                    echo "<tr><td colspan='5' class='text-center'>Nenhum contato encontrado.</td></tr>";
                   }
-                } else {
-                  echo "<tr><td colspan='5' class='text-center'>Nenhum contato encontrado.</td></tr>";
-                }
                 ?>
               </tbody>
             </table>

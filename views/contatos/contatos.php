@@ -28,6 +28,9 @@
 
 
         <?php
+
+        date_default_timezone_set('America/Sao_Paulo');
+
         $sql = "SELECT * FROM contatos ORDER BY data_envio DESC";
         $resultado = $conexao->query($sql);
 
