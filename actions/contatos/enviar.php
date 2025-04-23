@@ -1,6 +1,6 @@
 <?php
 // Configurações do banco de dados
-$host = "u783757499_htwebsites";
+$host = "localhost";
 $dbname = "contatos";
 $user = "u783757499_htwebsites";
 $pass = "TF+ak:4]o"; // Altere para a senha do seu MySQL, se houver

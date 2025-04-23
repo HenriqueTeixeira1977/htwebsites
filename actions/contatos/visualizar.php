@@ -1,5 +1,5 @@
 <?php
-include('conexao.php');
+include('../../includes/conexao.php');
 
 if (isset($_GET['id']) && is_numeric($_GET['id'])) {
     $id = intval($_GET['id']);
