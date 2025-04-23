@@ -41,7 +41,7 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
         <tr><th>Mensagem</th><td><?= nl2br(htmlspecialchars($contato['mensagem'])) ?></td></tr>
         <tr><th>Data/Hora</th><td><?= date('d/m/Y H:i', strtotime($contato['data_envio'])) ?></td></tr>
     </table>
-    <a href="index.php" class="btn btn-secondary">Voltar</a>
+    <a href="../../views/admin/admin.php" class="btn btn-secondary">Voltar</a>
 </div>
 </body>
 </html>
