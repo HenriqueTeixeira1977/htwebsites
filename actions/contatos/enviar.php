@@ -195,8 +195,12 @@ if ($nome && $email && $mensagem) {
             <a href="../../index.php" class="btn btn-primary">Voltar à Página Inicial</a>
         </div>
         <div class="card-footer">
-            date_default_timezone_set('America/Sao_Paulo');
-            Enviado em: <?= date("d/m/Y H:i") ?>
+            <?= date_default_timezone_set('America/Sao_Paulo'); ?>
+            Enviado em: 
+            <?= 
+                date_default_timezone_set('America/Sao_Paulo');
+                date("d/m/Y H:i") 
+            ?>
         </div>
     </div>
 
