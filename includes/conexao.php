@@ -1,5 +1,4 @@
 <?php
-
     $servidor = "localhost";
     $dbname = "u783757499_htwebsites";
     $usuario = "u783757499_htwebsites";
