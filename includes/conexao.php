@@ -1,8 +1,8 @@
 <?php
     $servidor = "localhost";
-    $dbname = "u783757499_htwebsites";
-    $usuario = "u783757499_htwebsites";
-    $senha = "TF+ak:4]o";
+    $dbname = "u588089239_htwebsites";
+    $usuario = "u588089239_htwebsites";
+    $senha = "@HTWebSites2026";
 
     $conexao = mysqli_connect($servidor, $usuario, $senha, $dbname);
     

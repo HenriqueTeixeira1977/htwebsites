@@ -1,8 +1,8 @@
 -- Criar banco de dados
-CREATE DATABASE IF NOT EXISTS u783757499_htwebsites CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+CREATE DATABASE IF NOT EXISTS u588089239_htwebsites CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
 
 -- Selecionar banco
-USE u783757499_htwebsites;
+USE u588089239_htwebsites;
 
 -- Criar tabela
 CREATE TABLE IF NOT EXISTS contatos (

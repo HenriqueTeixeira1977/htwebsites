@@ -1,9 +1,9 @@
 <?php
 // Configurações do banco de dados
 $host = "localhost";
-$dbname = "u783757499_htwebsites";
-$user = "u783757499_htwebsites";
-$pass = "TF+ak:4]o";
+$dbname = "u588089239_htwebsites";
+$user = "u588089239_htwebsites";
+$pass = "@HTWebSites2026";
 
 
 // Conectar ao banco
